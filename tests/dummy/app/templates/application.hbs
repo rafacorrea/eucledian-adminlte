@@ -1,3 +1,7 @@
 {{#lte-navigation logoUrl="http://placehold.it/200x50" outlet=outlet as |navigation|}}
-  {{navigation.link}}
+  {{#navigation.link}}
+    {{#link-to 'index'}}
+      {{fa-icon 'users'}} <span>Link</span>
+    {{/link-to}}
+  {{/navigation.link}}
 {{/lte-navigation}}

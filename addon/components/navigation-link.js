@@ -15,6 +15,4 @@ export default Component.extend({
     return false;
   }),
   link: 'index',
-  icon: 'users',
-  label: 'Link',
 });
