@@ -1,10 +1,12 @@
 {{#if label}}
   <label for="{{prop}}">{{label}}</label>
 {{/if}}
+<div>
 {{pikaday-input
   value=(get model prop)
   format="DD/MM/YYYY"
   disabled=disabled
+  theme=theme
   onSelection=(action 'onDateSelected')}}
 {{#each (get model.errors prop) as |error|}}
   <div class="errors">
