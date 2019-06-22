@@ -8,7 +8,7 @@ export default Component.extend({
   classNameBindings: ['propName'],
   disabled: false,
   label: null,
-  theme: 'form-control',
+  theme: null,
   propName: computed(function(){
     return `model-${this.get('prop')}`;
   }),
